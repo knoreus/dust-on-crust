@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-acid: #CCFF00;
+    --color-neon-blue: #00F0FF;
+    --color-neon-purple: #BC13FE;
+    --color-deep: #0A0A0A;
+    --color-surface: #141414;
+    --foreground: #F0F0F0;
+    --background: var(--color-deep);
+}
+
+body {
+    color: var(--foreground);
+    background: var(--background);
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+::selection {
+    background: var(--color-acid);
+    color: var(--color-deep);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+}
+
+.font-headline {
+    font-family: 'Oswald', sans-serif;
+}
+
+.font-body {
+    font-family: 'Lora', serif;
+}
+
+@layer utilities {
+    .text-acid {
+        color: var(--color-acid);
+    }
+
+    .bg-acid {
+        background-color: var(--color-acid);
+    }
+
+    .text-neon-blue {
+        color: var(--color-neon-blue);
+    }
+
+    .text-neon-purple {
+        color: var(--color-neon-purple);
+    }
+
+    .bg-deep {
+        background-color: var(--color-deep);
+    }
+
+    .bg-surface {
+        background-color: var(--color-surface);
+    }
+}
+
+/* Magazine Prose Styles */
+.prose-magazine {
+    max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+}
+
+.prose-magazine p {
+    font-family: 'Lora', serif;
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: 1.5em;
+    color: #D4D4D4;
+}
+
+.prose-magazine>p:first-of-type::first-letter {
+    float: left;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 0.8;
+    padding-right: 0.75rem;
+    padding-top: 0.25rem;
+    color: var(--color-acid);
+}
+
+.prose-magazine blockquote {
+    border-left: 3px solid var(--color-acid);
+    padding-left: 1.5rem;
+    font-style: italic;
+    color: #A1A1A1;
+    margin: 2rem 0;
+}
+
+.prose-magazine h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.75rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Buttons */
+.btn-primary {
+    display: inline-block;
+    background-color: var(--color-acid);
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.75rem 1.5rem;
+    letter-spacing: 0.05em;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    display: inline-block;
+    border: 1px solid var(--color-acid);
+    color: var(--color-acid);
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding: 0.75rem 1.5rem;
+    letter-spacing: 0.05em;
+    transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-acid);
+    color: black;
+}
