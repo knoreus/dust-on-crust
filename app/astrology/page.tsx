@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { FadeInOnScroll } from '@/components/effects/FadeInOnScroll';
@@ -151,22 +150,6 @@ export default function AstrologyPage() {
           </div>
         </section>
 
-        {/* Footer Image */}
-        <section className="relative h-[40vh] min-h-[300px]">
-          <Image
-            src="/images/magazine/astrology.jpg"
-            alt="Astrology page from Dust on Crust magazine"
-            fill
-            className="object-cover"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-ink/60 to-transparent" />
-          <div className="absolute bottom-8 left-0 right-0 text-center">
-            <p className="font-body text-lg italic text-cream-300">
-              May your edges be sharp and your pow be deep
-            </p>
-          </div>
-        </section>
       </main>
       <Footer />
     </>

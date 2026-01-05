@@ -145,3 +145,84 @@ h6 {
     background-color: var(--color-acid);
     color: black;
 }
+
+/* Lightweight Glitch Effect - CSS only, hover-triggered for performance */
+.glitch-hover {
+    position: relative;
+}
+
+.glitch-hover:hover {
+    animation: glitch-shift 0.3s ease-out;
+}
+
+@keyframes glitch-shift {
+
+    0%,
+    100% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-2px, 1px);
+    }
+
+    40% {
+        transform: translate(2px, -1px);
+    }
+
+    60% {
+        transform: translate(-1px, -1px);
+    }
+
+    80% {
+        transform: translate(1px, 1px);
+    }
+}
+
+/* Text glitch with chromatic aberration - hover only */
+.glitch-text {
+    position: relative;
+}
+
+.glitch-text:hover {
+    animation: glitch-text-shift 0.4s ease-out;
+    text-shadow:
+        -2px 0 var(--color-neon-blue),
+        2px 0 var(--color-neon-purple);
+}
+
+@keyframes glitch-text-shift {
+
+    0%,
+    100% {
+        text-shadow: none;
+        transform: translate(0);
+    }
+
+    25% {
+        text-shadow: -2px 0 var(--color-neon-blue), 2px 0 var(--color-neon-purple);
+        transform: translate(-1px, 0);
+    }
+
+    50% {
+        text-shadow: 2px 0 var(--color-neon-purple), -2px 0 var(--color-neon-blue);
+        transform: translate(1px, 0);
+    }
+
+    75% {
+        text-shadow: -1px 0 var(--color-neon-blue), 1px 0 var(--color-neon-purple);
+        transform: translate(0);
+    }
+}
+
+/* Page transition fade */
+.page-transition-enter {
+    opacity: 0;
+    transform: translateY(8px);
+}
+
+.page-transition-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}

@@ -48,7 +48,7 @@ export function CoverHero({ issueNumber, title, subtitle }: CoverHeroProps) {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.6, delay: 0.1 }}
                 >
-                    <h1 className="font-headline text-[12vw] md:text-[10vw] leading-[0.85] uppercase tracking-tighter text-white">
+                    <h1 className="font-headline text-[12vw] md:text-[10vw] leading-[0.85] uppercase tracking-tighter text-white glitch-text cursor-default">
                         {title.split(' ').map((word, i) => (
                             <span key={i} className="block">
                                 {word}

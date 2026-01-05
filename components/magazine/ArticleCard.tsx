@@ -50,7 +50,7 @@ export function ArticleCard({
                     </div>
 
                     <div className="space-y-3 flex-1 flex flex-col">
-                        <h3 className="font-headline text-2xl leading-none uppercase tracking-wide text-white group-hover:text-acid transition-colors">
+                        <h3 className="font-headline text-2xl leading-none uppercase tracking-wide text-white group-hover:text-acid transition-colors glitch-hover">
                             {title}
                         </h3>
 
