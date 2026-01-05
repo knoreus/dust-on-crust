@@ -80,7 +80,7 @@ export default function AboutPage() {
         </section>
 
         {/* Contributors */}
-        <section className="py-16 px-4">
+        <section className="py-16 md:py-20 px-4 mt-8 md:mt-0">
           <div className="max-w-4xl mx-auto">
             <FadeInOnScroll>
               <h2 className="font-headline text-3xl uppercase tracking-tighter text-white mb-8 text-center">

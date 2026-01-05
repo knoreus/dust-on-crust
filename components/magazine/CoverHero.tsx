@@ -70,15 +70,20 @@ export function CoverHero({ issueNumber, title, subtitle }: CoverHeroProps) {
                 </div>
 
                 {/* Scroll Indicator */}
-                <motion.div
+                <motion.a
+                    href="#content"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.8 }}
-                    className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+                    className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 cursor-pointer hover:text-acid transition-colors"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        document.getElementById('content')?.scrollIntoView({ behavior: 'smooth' });
+                    }}
                 >
                     <div className="h-12 w-px bg-white/20" />
-                    <span className="font-mono text-[10px] uppercase tracking-widest text-gray-500">Scroll</span>
-                </motion.div>
+                    <span className="font-mono text-[10px] uppercase tracking-widest text-gray-500 hover:text-acid transition-colors">Scroll</span>
+                </motion.a>
             </div>
         </div>
     );

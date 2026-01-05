@@ -17,7 +17,7 @@ export default function HomePage() {
             />
 
             {/* Featured Articles */}
-            <section className="py-20 px-4">
+            <section id="content" className="py-20 px-4">
                 <div className="max-w-6xl mx-auto">
                     <FadeInOnScroll>
                         <div className="text-center mb-12">
