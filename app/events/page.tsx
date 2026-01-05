@@ -96,7 +96,7 @@ export default function EventsPage() {
                     <h3 className="font-headline text-4xl uppercase tracking-wide text-white mb-2">
                       {event.location}
                     </h3>
-                    <p className="font-body text-gray-500">
+                    <p className="font-body text-gray-400">
                       Venue TBA
                     </p>
                   </div>
@@ -133,7 +133,7 @@ export default function EventsPage() {
                 of the ski world, I&apos;ve also dreamed of creating a viewing experience for people that does
                 the same. NOISE ORDINANCE is my offering.&rdquo;
               </p>
-              <p className="font-mono text-xs text-gray-500 uppercase tracking-widest text-center mt-4">
+              <p className="font-mono text-xs text-gray-400 uppercase tracking-widest text-center mt-4">
                 &mdash; Filmmaker: Mallory Duncan
               </p>
             </FadeInOnScroll>
@@ -171,7 +171,7 @@ export default function EventsPage() {
         <section className="py-16 px-4 border-t border-white/10">
           <div className="max-w-3xl mx-auto text-center">
             <FadeInOnScroll>
-              <p className="font-mono text-xs uppercase tracking-[0.3em] text-gray-500 mb-4">
+              <p className="font-mono text-xs uppercase tracking-[0.3em] text-gray-400 mb-4">
                 In Collaboration With
               </p>
               <h2 className="font-headline text-3xl uppercase tracking-wide text-white mb-6">
@@ -214,11 +214,11 @@ export default function EventsPage() {
                   <span className="font-headline text-5xl md:text-6xl text-white text-center leading-[0.9]">ORDINANCE</span>
                   <div className="mt-8 flex gap-8">
                     <div className="text-center">
-                      <span className="font-mono text-xs text-gray-500">Hood River</span>
+                      <span className="font-mono text-xs text-gray-400">Hood River</span>
                       <span className="block font-headline text-xl text-white">11.11</span>
                     </div>
                     <div className="text-center">
-                      <span className="font-mono text-xs text-gray-500">Portland</span>
+                      <span className="font-mono text-xs text-gray-400">Portland</span>
                       <span className="block font-headline text-xl text-white">11.12</span>
                     </div>
                   </div>

@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-const navLinks = [
+export const navLinks = [
   { href: '/issue/01', label: 'Issue 01' },
   { href: '/about', label: 'About' },
   { href: '/astrology', label: 'Astrology' },
@@ -28,8 +28,7 @@ export function Navigation({ className = '', linkClassName = '' }: NavigationPro
           <Link
             key={link.href}
             href={link.href}
-            className={`font-mono text-xs uppercase tracking-widest transition-colors hover:text-teal ${isActive ? 'text-teal' : linkClassName
-              }`}
+            className={`nav-link ${isActive ? 'nav-link--active' : linkClassName}`}
           >
             {link.label}
           </Link>
@@ -38,5 +37,3 @@ export function Navigation({ className = '', linkClassName = '' }: NavigationPro
     </nav>
   );
 }
-
-export { navLinks };

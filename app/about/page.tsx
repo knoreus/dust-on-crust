@@ -71,7 +71,7 @@ export default function AboutPage() {
                 <p className="font-headline text-2xl uppercase text-white">
                   Dust <span className="text-acid italic">on</span> Crust
                 </p>
-                <p className="font-mono text-xs text-gray-500 uppercase tracking-widest mt-2">
+                <p className="font-mono text-xs text-gray-400 uppercase tracking-widest mt-2">
                   Thanks for reading
                 </p>
               </div>

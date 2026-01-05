@@ -111,7 +111,7 @@ export default function PartnersPage() {
                       </p>
                     )}
                     {partner.location && (
-                      <p className="font-mono text-xs text-gray-500 uppercase tracking-widest mb-4">
+                      <p className="font-mono text-xs text-gray-400 uppercase tracking-widest mb-4">
                         {partner.location}
                       </p>
                     )}
@@ -167,7 +167,7 @@ export default function PartnersPage() {
               <p className="font-body text-xl italic text-gray-400 border-l-4 border-acid pl-6 text-left max-w-2xl mx-auto">
                 &ldquo;A huge thank you to ON3P Skis for their generous sponsorship of this first issue.&rdquo;
               </p>
-              <p className="font-mono text-xs text-gray-500 uppercase tracking-widest mt-4">
+              <p className="font-mono text-xs text-gray-400 uppercase tracking-widest mt-4">
                 &mdash; From the Intro Letter
               </p>
             </FadeInOnScroll>

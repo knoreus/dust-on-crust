@@ -25,7 +25,7 @@ export default function TLeafPage() {
             <h1 className="font-headline text-4xl md:text-6xl uppercase tracking-tighter mb-6">
               3 Things I Hate<br />About Skiing<br />This Week
             </h1>
-            <p className="font-mono text-sm text-gray-500 uppercase tracking-widest">
+            <p className="font-mono text-sm text-gray-400 uppercase tracking-widest">
               By T. Leaf
             </p>
           </div>

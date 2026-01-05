@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export default function HomePage() {
     return (
-        <main className="bg-deep text-white">
+        <main id="main-content" className="bg-deep text-white">
             <Header transparent />
 
             <CoverHero
@@ -27,7 +27,7 @@ export default function HomePage() {
                             <h2 className="font-headline text-4xl md:text-5xl uppercase tracking-tighter text-white mb-4">
                                 In This Issue
                             </h2>
-                            <p className="font-body text-gray-500 max-w-md mx-auto">
+                            <p className="font-body text-gray-300 max-w-md mx-auto">
                                 Stories and vibes for those who live the everyday ski life.
                             </p>
                         </div>
@@ -42,6 +42,7 @@ export default function HomePage() {
                                     excerpt={article.excerpt}
                                     slug={article.slug}
                                     category={article.category}
+                                    heroVariant={article.heroVariant}
                                     articleNumber={index + 1}
                                 />
                             </FadeInOnScroll>
@@ -63,11 +64,11 @@ export default function HomePage() {
                         <h2 className="font-headline text-4xl md:text-5xl uppercase tracking-tighter mb-6">
                             Against The Algorithm
                         </h2>
-                        <p className="font-body text-lg text-gray-400 leading-relaxed mb-6">
+                        <p className="font-body text-lg text-gray-300 leading-relaxed mb-6">
                             In a world of $20,000 ski vacations and influencers begging for likes,
                             we&apos;re building something different. Content for the everyday skier.
                         </p>
-                        <p className="font-body text-gray-500 border-l-2 border-acid pl-6 text-left max-w-md mx-auto">
+                        <p className="font-body text-gray-300 border-l-2 border-acid pl-6 text-left max-w-md mx-auto">
                             The shop rats, the weekend warriors, the midweek passholders.
                         </p>
                     </FadeInOnScroll>
@@ -95,7 +96,7 @@ export default function HomePage() {
                                     <h3 className="font-headline text-lg uppercase tracking-wide group-hover:text-acid transition-colors mb-1">
                                         {item.title}
                                     </h3>
-                                    <p className="font-mono text-xs text-gray-500 uppercase tracking-wider">
+                                    <p className="font-mono text-xs text-gray-400 uppercase tracking-wider">
                                         {item.desc}
                                     </p>
                                 </Link>

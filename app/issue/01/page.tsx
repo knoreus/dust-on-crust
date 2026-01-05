@@ -109,7 +109,7 @@ export default function Issue01Page() {
         <section className="py-16 px-4 border-t border-white/10">
           <div className="max-w-3xl mx-auto text-center">
             <FadeInOnScroll>
-              <p className="font-mono text-xs uppercase tracking-[0.3em] text-gray-500 mb-8">
+              <p className="font-mono text-xs uppercase tracking-[0.3em] text-gray-400 mb-8">
                 Issue 01 Sponsors
               </p>
             </FadeInOnScroll>
@@ -134,7 +134,7 @@ export default function Issue01Page() {
                       {sponsor.name}
                     </h3>
                     {sponsor.tagline && (
-                      <p className="font-mono text-[10px] text-gray-500 uppercase tracking-wider mt-1 text-center">
+                      <p className="font-mono text-[10px] text-gray-400 uppercase tracking-wider mt-1 text-center">
                         {sponsor.tagline}
                       </p>
                     )}

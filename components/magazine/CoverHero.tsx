@@ -82,7 +82,7 @@ export function CoverHero({ issueNumber, title, subtitle }: CoverHeroProps) {
                     }}
                 >
                     <div className="h-12 w-px bg-white/20" />
-                    <span className="font-mono text-[10px] uppercase tracking-widest text-gray-500 hover:text-acid transition-colors">Scroll</span>
+                    <span className="font-mono text-[10px] uppercase tracking-widest text-gray-400 hover:text-acid transition-colors">Scroll</span>
                 </motion.a>
             </div>
         </div>

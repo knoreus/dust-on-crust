@@ -34,12 +34,12 @@ export function ImageSpread({ alt, caption, credit }: ImageSpreadProps) {
             {(caption || credit) && (
                 <figcaption className="mt-3 px-4 md:px-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
                     {caption && (
-                        <p className="font-mono text-xs text-gray-500 uppercase tracking-wider">
+                        <p className="font-mono text-xs text-gray-400 uppercase tracking-wider">
                             {caption}
                         </p>
                     )}
                     {credit && (
-                        <p className="font-mono text-[10px] text-gray-600 uppercase tracking-widest">
+                        <p className="font-mono text-[10px] text-gray-400 uppercase tracking-widest">
                             Photo: {credit}
                         </p>
                     )}

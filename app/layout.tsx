@@ -1,23 +1,34 @@
 import type { Metadata } from 'next';
-import { Oswald, Lora, IBM_Plex_Mono } from 'next/font/google';
+import { Bebas_Neue, Lora, Fira_Code, Space_Mono } from 'next/font/google';
 import './globals.css';
 
-const oswald = Oswald({
+// BOLD headline font - maximum impact
+const bebasNeue = Bebas_Neue({
+  weight: '400',
   subsets: ['latin'],
-  variable: '--font-oswald',
+  variable: '--font-headline',
   display: 'swap',
 });
 
+// Elegant serif for body text
 const lora = Lora({
   subsets: ['latin'],
-  variable: '--font-lora',
+  variable: '--font-body',
   display: 'swap',
 });
 
-const ibmPlexMono = IBM_Plex_Mono({
-  weight: ['400', '500'],
+// Terminal aesthetic - characterful mono
+const firaCode = Fira_Code({
   subsets: ['latin'],
-  variable: '--font-ibm-plex-mono',
+  variable: '--font-mono',
+  display: 'swap',
+});
+
+// Secondary mono for UI elements
+const spaceMono = Space_Mono({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  variable: '--font-ui',
   display: 'swap',
 });
 
@@ -36,14 +47,6 @@ export const metadata: Metadata = {
     siteName: 'Dust on Crust',
     title: 'Dust on Crust | Pacific Northwest Ski Magazine',
     description: 'An indie ski magazine for the everyday skier.',
-    images: [
-      {
-        url: '/images/magazine/cover_page.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Dust on Crust - Pacific Northwest Ski Magazine',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
@@ -60,8 +63,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${oswald.variable} ${lora.variable} ${ibmPlexMono.variable}`}>
-      <body>
+    <html
+      lang="en"
+      className={`${bebasNeue.variable} ${lora.variable} ${firaCode.variable} ${spaceMono.variable}`}
+    >
+      <body className="antialiased">
+        {/* Skip to main content - accessibility */}
+        <a
+          href="#main-content"
+          className="skip-link"
+        >
+          Skip to main content
+        </a>
         {children}
       </body>
     </html>
